@@ -1,0 +1,86 @@
+.anchorPane {
+    -fx-background-color: linear-gradient(to bottom right, #394955, #546E7A);
+}
+
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: linear-gradient(to top right, #3c2c21, #93773e);
+    -fx-border-radius: 8px;
+    -fx-border-width: 2px;
+    -fx-padding: 0px;
+}
+
+.table-view .table-column {
+    -fx-alignment: CENTER;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to top right, #3c2c21, #93773e);
+    -fx-background-radius: 8px 8px 0px 0px;
+    -fx-background-insets: 0 0 0 0;
+}
+
+.table-view .column-header, .filter {
+    -fx-background-color: transparent;
+    -fx-size: 40px;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #fff;
+    -fx-font-family: Arial;
+}
+
+.button {
+    -fx-background-color: linear-gradient(to bottom right, #546E7A, #607D8B);
+    -fx-background-radius: 12px;
+    -fx-text-fill: #ECEFF1;
+    -fx-font-size: 16px;
+    -fx-padding: 8px 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.7), 15, 0.1, 0, 4);
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom right, #607D8B, #78909C);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.8), 20, 0.1, 0, 6);
+}
+
+.button:pressed {
+    -fx-background-color: linear-gradient(to bottom right, #394955, #546E7A);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 10, 0.1, 0, 2);
+}
+
+.label {
+    -fx-text-fill: #FFFFFFFF; /* Light grayish-blue, enhances readability */
+    -fx-font-family: 'Times New Roman'; /* Consistent font family */
+    -fx-font-size: 14px; /* Optimal size for readability */
+    -fx-font-weight: bold; /* Makes text more prominent */
+    -fx-padding: 5px; /* Padding for better text alignment */
+    -fx-effect: dropshadow(one-pass-box, rgba(0, 0, 0, 0.75), 3, 0.0, 0, 1); /* Subtle shadow for depth */
+
+}
+
+.label:hover {
+    -fx-background-color: rgba(84, 110, 122, 0.5); /* Lighter on hover for interactive feel, still semi-transparent */
+    -fx-cursor: hand; /* Changes cursor to hand when mouse hovers over, indicating interactivity */
+}
+
+.label:disabled {
+    -fx-opacity: 0.4; /* Gray out when disabled for user feedback */
+    -fx-background-color: rgba(57, 73, 85, 0.5); /* Maintains semi-transparent background but shows disabled state */
+}
+
+.combo-box {
+    -fx-font-size: 14px;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1px;
+    -fx-padding: 5px;
+    -fx-background-radius: 4px;
+    -fx-border-radius: 4px;
+    -fx-background-color: #ffffff; /* Keeps dropdowns crisp */
+}
+
+.combo-box .list-cell {
+    -fx-padding: 8px;
+    -fx-text-fill: #333;
+}

@@ -1,0 +1,111 @@
+.anchorPane {
+    -fx-background-color: linear-gradient(to bottom right, #394955, #546E7A);
+}
+
+.table-view {
+    -fx-background-color: transparent;
+    -fx-border-color: linear-gradient(to top right, #3c2c21, #93773e);
+    -fx-border-radius: 8px;
+    -fx-border-width: 2px;
+    -fx-padding: 0px;
+}
+
+.table-view .table-column {
+    -fx-alignment: CENTER;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to top right, #3c2c21, #93773e);
+    -fx-background-radius: 8px 8px 0 0;
+    -fx-background-insets: 0 0 0 0;
+}
+
+.table-view .column-header, .filter {
+    -fx-background-color: transparent;
+    -fx-size: 40px;  /* This property may not work as expected since -fx-size is not a valid JavaFX CSS property */
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #fff;
+    -fx-font-family: Arial;
+}
+
+.button {
+    -fx-background-color: linear-gradient(to bottom right, #546E7A, #607D8B);
+    -fx-background-radius: 12px;
+    -fx-text-fill: #ECEFF1; /* Light grayish-blue, enhances readability */
+    -fx-font-family: 'Times New Roman';
+    -fx-font-size: 16px;
+    -fx-padding: 8px 15px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.7), 15, 0.1, 0, 4);
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to bottom right, #607D8B, #78909C);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.8), 20, 0.1, 0, 6);
+}
+
+.button:pressed {
+    -fx-background-color: linear-gradient(to bottom right, #394955, #546E7A);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.6), 10, 0.1, 0, 2);
+}
+
+.label {
+    -fx-text-fill: #ffffff; /* Corrected the color code to a valid format */
+    -fx-font-family: 'Times New Roman';
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 5px;
+    -fx-effect: dropshadow(one-pass-box, rgba(0,0,0,0.75), 3, 0.0, 0, 1);
+}
+
+.label:hover {
+    -fx-background-color: rgba(84, 110, 122, 0.5);
+    -fx-cursor: hand;
+}
+
+.label:disabled {
+    -fx-opacity: 0.4;
+    -fx-background-color: rgba(57, 73, 85, 0.5);
+}
+.combo-box {
+    -fx-font-family: 'Times New Roman'; /* Consistent font family */
+    -fx-font-size: 14px; /* Adequate text size for readability */
+    -fx-background-color: linear-gradient(to bottom right, #607D8B, #78909C); /* Gradient background for the dropdown */
+    -fx-border-color: #506872; /* Solid border color derived from the darker part of the gradient */
+    -fx-border-width: 1px; /* Border thickness */
+    -fx-border-radius: 5px; /* Rounded corners for a modern look */
+    -fx-padding: 5px; /* Padding inside the dropdown */
+    -fx-background-radius: 5px; /* Ensure the background matches the border radius */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 3, 0.1, 0, 2); /* Enhanced shadow for depth */
+}
+
+.combo-box:hover {
+    -fx-border-color: linear-gradient(to top right, #3c2c21, #93773e);/* Slightly darker border on hover for visual feedback */
+}
+
+.combo-box:focused {
+    -fx-border-color: linear-gradient(to top right, #3c2c21, #93773e); /* Even darker border to emphasize focus */
+    -fx-border-width: 2px; /* Thicker border to highlight focus */
+}
+
+.combo-box .list-cell {
+    -fx-padding: 8px;
+    -fx-text-fill: #333; /* Dark text color for contrast and readability */
+}
+
+.combo-box .cell {
+    -fx-background-color: #f8f8f8; /* Light background for dropdown items */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.05), 3, 0.0, 0, 1); /* Very subtle shadow for dropdown items */
+}
+
+.combo-box .cell:hover {
+    -fx-background-color: #e0e0e0; /* Hover color for items */
+}
+
+
+.combo-box .cell:selected {
+    -fx-background-color: linear-gradient(to bottom right, #506872, #607D8B); /* Gradient for selected item */
+    -fx-text-fill:linear-gradient(to top right, #3c2c21, #93773e); /* White text for selected item for readability */
+}

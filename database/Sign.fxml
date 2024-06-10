@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.database.SignController">
+    <children>
+        <AnchorPane layoutX="-30.0" layoutY="1.0" prefHeight="467.0" prefWidth="631.0" stylesheets="@Sell.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="352.0" fitWidth="350.0" layoutX="-3.0" layoutY="-5.0" pickOnBounds="true" preserveRatio="true" styleClass="image-view">
+                    <image>
+                        <Image url="@../../../../../../../Users/microsoft/Desktop/صور%20المشروع/420522570_702502938692654_1275817422923833142_n.jpg" />
+                    </image>
+                </ImageView>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="377.0" layoutY="33.0" prefHeight="51.0" prefWidth="205.0" styleClass="label" text="Login" textOverrun="CENTER_ELLIPSIS">
+                    <font>
+                        <Font name="Berlin Sans FB" size="36.0" />
+                    </font>
+                </Label>
+                <ImageView fitHeight="91.0" fitWidth="105.0" layoutX="434.0" layoutY="84.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true" styleClass="image-view">
+                    <image>
+                        <Image url="@../../../../../../../Users/microsoft/Desktop/صور%20المشروع/icons8-person-64.png" />
+                    </image>
+                </ImageView>
+                <Label alignment="CENTER" contentDisplay="CENTER" layoutX="45.0" layoutY="369.0" prefHeight="91.0" prefWidth="555.0" styleClass="welcome-text" stylesheets="@Sell.css" text="Welcome to Royal Company" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                    <font>
+                        <Font name="Berlin Sans FB" size="36.0" />
+                    </font>
+                </Label>
+                <GridPane hgap="10" layoutX="385.0" layoutY="190.0" prefHeight="70.0" prefWidth="229.0" vgap="10">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="196.6666259765625" minWidth="10.0" prefWidth="194.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <TextField fx:id="userName" alignment="CENTER" prefHeight="32.0" prefWidth="151.0" promptText="User Name" styleClass="text-field" GridPane.columnIndex="0" GridPane.rowIndex="0">
+                            <font>
+                                <Font name="Arial" size="14.0" />
+                            </font>
+                        </TextField>
+                  <PasswordField fx:id="password" alignment="CENTER" prefHeight="41.0" prefWidth="197.0" promptText="password" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Arial" size="12.0" />
+                     </font>
+                  </PasswordField>
+                    </children>
+                </GridPane>
+                <GridPane hgap="10" layoutX="420.0" layoutY="290.0" vgap="10">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="169.33331298828125" minWidth="10.0" prefWidth="155.33331298828125" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Button fx:id="signIn" mnemonicParsing="false" onAction="#signIn" prefHeight="25.0" prefWidth="121.0" styleClass="table-view" stylesheets="@Sell.css" text="sign in" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+                        <Button fx:id="signUp" mnemonicParsing="false" onAction="#signUp" prefHeight="25.0" prefWidth="121.0" styleClass="table-view" stylesheets="@Sell.css" text="sign up" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+                    </children>
+                </GridPane>
+            </children>
+         <styleClass>
+            <String fx:value="login-form" />
+            <String fx:value="anchorPane" />
+         </styleClass>
+        </AnchorPane>
+    </children>
+</AnchorPane>

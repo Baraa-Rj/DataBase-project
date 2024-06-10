@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="569.0" prefWidth="732.0" styleClass="anchorPane" stylesheets="@Sell.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.database.StorageController">
+    <TableView fx:id="tableView" layoutX="124.0" layoutY="73.0" onMouseClicked="#rowClicked" prefHeight="230.0" prefWidth="498.0" styleClass="table-view" stylesheets="@Sell.css">
+        <columns>
+            <TableColumn fx:id="storageId" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="storageName" prefWidth="159.0" text="Name" />
+            <TableColumn fx:id="storageCapacity" prefWidth="134.0" text="Capacity" />
+            <TableColumn fx:id="storageLocation" prefWidth="128.0" text="Location" />
+        </columns>
+    </TableView>
+    <HBox layoutX="207.0" layoutY="456.0" spacing="10" styleClass="hbox">
+        <Button mnemonicParsing="false" onAction="#addStorage" styleClass="table-view" stylesheets="@Sell.css" text="Insert" />
+        <Button mnemonicParsing="false" onAction="#updateStorage" styleClass="table-view" stylesheets="@Sell.css" text="Update" />
+        <Button mnemonicParsing="false" onAction="#deleteStorage" styleClass="table-view" stylesheets="@Sell.css" text="Delete" />
+        <Button fx:id="btSelect" mnemonicParsing="false" onAction="#handleSelectButton" styleClass="table-view" stylesheets="@Sell.css" text="Select" />
+    </HBox>
+    <GridPane layoutX="216.0" layoutY="328.0" prefHeight="100.0" prefWidth="300.0" styleClass="grid-pane" vgap="5.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="200.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="29.0" minHeight="0.0" prefHeight="27.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <Label stylesheets="@Sell.css" text="Storage_ID" GridPane.columnIndex="0" />
+        <TextField fx:id="tfId" stylesheets="@Sell.css" GridPane.columnIndex="1" />
+        <Label stylesheets="@Sell.css" text="Storage_Name" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <TextField fx:id="tfName" stylesheets="@Sell.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Label stylesheets="@Sell.css" text="Location" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <TextField fx:id="tfLocation" stylesheets="@Sell.css" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Label stylesheets="@Sell.css" text="Capacity" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <TextField fx:id="tfCapacity" stylesheets="@ItemsDesign.css" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+    </GridPane>
+   <Button layoutX="341.0" layoutY="510.0" mnemonicParsing="false" onAction="#goBack" stylesheets="@Sell.css" text="back">
+      <styleClass>
+         <String fx:value="table-view" />
+         <String fx:value="button" />
+      </styleClass>
+   </Button>
+</AnchorPane>

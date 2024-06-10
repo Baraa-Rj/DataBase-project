@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="611.0" prefWidth="708.0" styleClass="anchorPane" stylesheets="@Sell.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.database.ControllerCENTER">
+    <children>
+        <ImageView fx:id="Customers" fitHeight="209.0" fitWidth="282.0" layoutX="65.0" layoutY="26.0" onMouseClicked="#customersScreen" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../Users/microsoft/Desktop/صور%20المشروع/313428560_444734024469548_2387051255271058403_n.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="Storage" fitHeight="216.0" fitWidth="203.0" layoutX="354.0" layoutY="29.0" onMouseClicked="#storageScreen" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../Users/microsoft/Desktop/صور%20المشروع/WhatsApp%20Image%202024-05-29%20at%2021.24.59_9a87f67c.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fx:id="Items" fitHeight="209.0" fitWidth="209.0" layoutX="354.0" layoutY="278.0" onMouseClicked="#itemsScreen" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../Users/microsoft/Desktop/صور%20المشروع/WhatsApp%20Image%202024-05-29%20at%2021.24.59_70cb14d0.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="83.0" fitWidth="80.0" layoutX="614.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../Users/microsoft/Downloads/10873580_327857070744845_9013604642500455966_o-removebg-preview.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="209.0" fitWidth="228.0" layoutX="65.0" layoutY="281.0" onMouseClicked="#sellScreen" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../Users/microsoft/Desktop/WhatsApp%20Image%202024-06-08%20at%2016.40.54_609ef0d4.jpg" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="129.0" fitWidth="120.0" layoutX="588.0" layoutY="104.0" onMouseClicked="#logout" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../Users/microsoft/Desktop/صور%20المشروع/icons8-redo-100.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>
